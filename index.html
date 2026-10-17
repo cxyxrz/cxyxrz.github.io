@@ -37,6 +37,44 @@
 				<!-- Main -->
 					<div id="main">
 
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>RPC框架</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="image fit"><img src="images/仿nacos界面.png" alt="仿nacos界面" /></span>
+										<h3>仿nacos界面</h3>
+									</li>
+									
+								</ul>
+								
+								<ul class="features">
+									<li>
+										
+										<h3>技术栈</h3>
+										<p>
+											核心架构：包括消费方调用、序列化器、网络服务器、请求处理器、服务注册器模块。<br />
+											网络服务器：基于Vert.x的HTTP服务器，实现服务提供者和消费者的高性能网络通信。<br />
+											服务注册器：使用线程安全的ConcurrentHashMap存储本地服务注册信息，可以根据服务名称获取到对应实现类，并通过反射完成方法调用。<br />
+											序列化器：为便于扩展，编写通用的序列化器接口，并基于Java原生的Object和ByteArray输入输出流实现JdkSerializer序列化器，使得对象能够网络传输。<br />
+											请求处理器：基于Vert.x的Handler接口实现对请求的异步处理，将请求数据反序列化后，从服务注册器中<br />
+											消费方调用：基于JDK动态代理+工厂模式实现，为指定服务接口类生成可发送HTTP请求的代理对象，实现远程方法的无感知调用。
+										</p>
+									</li>
+									
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://github.com/cxyxrz/EnglishPractice.git" class="button">github链接</a></li>
+									</ul>
+								</footer>
+							</section>
+
+
+
 						
 
 						<!-- First Section -->
